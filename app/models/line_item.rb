@@ -1,5 +1,7 @@
-class LineItem < ActiveRecord::Base
-  has_many :line_items, dependent: :destroy	
+class LineItem < ActiveRecord::Base	
   belongs_to :product
   belongs_to :cart
+  def total_price
+  	product.price * quantity
+  end
 end
