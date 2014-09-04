@@ -1,3 +1,20 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will
+ * include all the files listed below.
+ * 
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets,
+ * vendor/assets/stylesheets, or vendor/assets/stylesheets of plugins, if any,
+ * can be referenced here using a relative path.
+ * 
+ * You're free to add application-wide styles to this file and they'll appear
+ * at the top of the compiled file, but it's generally better to create a new
+ * file per style scope.
+ * 
+ *= require_self
+ *= require_tree .
+ */
+
+/* START_HIGHLIGHT */
 #banner {
   background: #9c9;
   padding: 10px;
@@ -34,7 +51,7 @@
     padding: 1em 2em;
     width: 13em;
     background: #141;
-
+  
     form, div {
       display: inline;
     }  
@@ -56,10 +73,8 @@
 
     ul {
       padding: 0;
-
       li {
         list-style: none;
-
         a {
           color: #bfb;
           font-size: small;
@@ -71,7 +86,7 @@
 
 .depot_form {
   fieldset {
-    background: #efe
+    background: #efe;
 
     legend {
       color: #dfd;
@@ -98,8 +113,9 @@
     .submit {
       margin-left: 4em;
     }
+
     br {
-      display: none;
+      display: none
     }
   }
 }
